@@ -4,4 +4,4 @@ let height = 20;
 
 let volume = Math.PI * radius * radius * height; // Calculate the cylinder volume
 
-console.log(volume);
+console.log(volume.toFixed(2)); // Log rounded to two decimal value
