@@ -1,7 +1,7 @@
 import {getTodo} from './task2.1.mjs'
 import {getUser} from './task2.2.mjs'
 
-Promise.all([getTodo(), getUser()]) // Logs all promises results
+Promise.all([getTodo(), getUser()]) // Returns all promises results
   .then(([todo, user]) => {
     console.log('Todo:', todo);
     console.log('User:', user);
@@ -11,7 +11,7 @@ Promise.all([getTodo(), getUser()]) // Logs all promises results
   });
 
 
-Promise.race([getTodo(), getUser()])
+Promise.race([getTodo(), getUser()]) // Returns the first processed promise results
     .then(result => {
         console.log('And the winner iiiiiis:', result);
     })
